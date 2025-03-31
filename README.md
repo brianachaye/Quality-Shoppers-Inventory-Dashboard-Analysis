@@ -1,80 +1,94 @@
-# 🚀 Quanta Technologies Workforce & Project Dashboard Analysis
+
+# 📊 Quality Shoppers Inventory Analysis Dashboard
 
 ![Quality Shoppers Inventory Dashboard 1](quality_shoppers_dashboard_1.png)
 
-## 📊 Executive Summary
+## 🏪 Executive Summary
 
-This Power BI dashboard provides real-time visibility into Quanta Technologies’ workforce costs, project budgets, and departmental performance. Key findings reveal:
+This Power BI dashboard provides a comprehensive view of **inventory health** for Quality Shoppers, highlighting **aging stock**, **safety stock violations**, and **brand performance**. 
 
-- 🛑 **Human Resources** is **$50K over budget** due to high salary costs relative to project returns.
-- 🏗 **Engineering** has the highest capital expenditure (**$770K**) but aligns with its **“Develop new products”** goal.
-- 📈 **10 upcoming projects** (vs. **4 completed**) indicate a busy pipeline, with **Sales and HR dominating budget allocations**.
+### 🔍 Key Findings:
+- 🛑 **$58K of inventory at Basalt Logistics** is aging beyond **12 months**, risking obsolescence.
+- ⚠️ **5 products are below safety stock levels**, including top sellers like **Cold Press Juicer (Pink)**.
+- 🏷 **Aster brand dominates inventory (2,928 units)** but shows slow turnover in some categories.
 
-## 🔍 Key Insights
+## 📦 Key Insights
 
-### 1️⃣ Departments at Financial Risk
+### 1️⃣ Inventory Aging & Obsolescence Risk
 
-| 📌 Department     | 💰 Budget  | 💵 Salary Cost | 📊 Project Cost | 🏦 Capital  | ⚠️ Status            |
-|-------------------|---------|-------------|--------------|----------|------------------|
-| 🏢 Human Resources  | $1.6M   | $320K       | $210K        | ($50K)   | ❗ Over budget    |
-| 🏗 Engineering      | $2.4M   | $160K       | $110K        | $770K    | ✅ On track (R&D focus) |
-| 📈 Sales           | $1.8M   | $239K       | $220K        | $202K    | ⚠️ Monitor project ROI |
+| 🚚 Logistics Partner  | ⏳ 0–3 Months | ⏳ 4–6 Months | ⏳ 7–9 Months | ⏳ 10–12 Months | 🔴 Beyond 12 Months |
+|----------------------|--------------|--------------|--------------|---------------|------------------|
+| Apsis Logistics     | 2K           | 51K          | 35K          | 11K           | 8K               |
+| Basalt Logistics    | –            | –            | –            | –             | **58K (❗High risk)** |
+| Ceres Logistics     | –            | 19K          | 35K          | –             | –                |
 
 #### ⚠️ Risk Analysis:
-- **HR’s salary costs ($320K) exceed project returns ($210K)**, creating a **$50K capital deficit**.
-- **Sales projects consume 12.2% of the total budget** but lack visibility into ROI (e.g., *“Brand Repositioning” at $140K*).
+- **$58K at Basalt Logistics** has been stagnant for **over 12 months**—**urgent action needed** (e.g., discounts, bundling).
+- **Apsis Logistics** has **$35K in the 7–9 month range**, nearing obsolescence.
 
-🔹 **🛠 Recommendations:**
-- 📌 Audit HR’s high salary spend (e.g., overtime, headcount).
-- 📊 Tie Sales budgets to revenue targets (e.g., CRM Integration’s impact on conversions).
+🔹 **Recommendations:**
+- 📉 **Launch a clearance sale** for aged inventory at **Basalt Logistics**.
+- 📊 **Adjust purchasing forecasts** to prevent overstocking (e.g., reduce orders for slow-movers like **Mizer**).
 
-### 2️⃣ Project Budget Allocation
+### 2️⃣ Safety Stock Violations
 
-#### 🏆 **Top 3 Projects by Budget:**
-1. 🎯 **Brand Repositioning** ($140K | Marketing)
-2. 📞 **Customer Support Upgrade** ($110K | Sales)
-3. 🏢 **CRM Integration** ($100K | Sales)
+#### 🚨 Products Below Safety Stock Levels:
+- 🍚 **Rice Cooler 1.0L (Silver)** – **1,053 units** (Safety stock: **1,533**)
+- 🥤 **Cold Press Juicer (Pink)** – **897 units** (Safety stock: **1,272**)
+- 🍹 **Compact Juicer (Pink)** – **983 units** (Safety stock: **1,574**)
 
-#### 🚨 **Concerns:**
-- **⚡ 70% of projects are “upcoming”**—potential for scope creep or delays.
-- **🔗 No clear link between budgets and department goals** (e.g., Engineering’s **$770K capital vs. $110K project spend**).
+📉 **Impact:** Stockouts could lead to **lost sales** and **customer dissatisfaction**.
 
-🔹 **📢 Recommendations:**
-- 📅 Implement **quarterly budget reviews** to align project spend with annual goals.
-- 📌 Add **KPIs to track project health** (e.g., timeline adherence, deliverable quality).
+🔹 **Recommendations:**
+- 🚀 **Prioritize replenishment** for juicers and rice coolers (high-demand items).
+- 🔔 **Set up automated alerts** for stock levels falling below **110% of safety stock**.
+
+### 3️⃣ Brand & Product Performance
+
+#### 📢 Top Brands by Inventory Volume:
+- 🏷 **Aster** – **2,928 units**
+- 🏷 **Bells** – **2,276 units**
+- 🏷 **Cilias** – **2,675 units**
+
+#### 🐢 Slow-Moving Products:
+- 📉 **Miconave (881 units)** and **Oven (258 units)** show **low turnover**.
+
+🔹 **Recommendations:**
+- 🎁 **Bundle slow-movers** with bestsellers (e.g., **Aster blenders with Miconave accessories**).
+- 📊 **Analyze sales trends** to determine if slow stock is due to **pricing or demand shifts**.
 
 ![Quality Shoppers Inventory Dashboard 2](quality_shoppers_dashboard_2.png)
 
-### 3️⃣ Workforce Cost vs. Productivity
+### 4️⃣ Location-Level Insights
 
-- 💰 **HR has the highest salary cost ($320K)** but the **lowest capital return**.
-- 🏗 **Engineering achieves high capital output ($770K) with moderate salaries ($160K)**—a model for efficiency.
+- 📉 **P066 (Rice Cooler 1.0L)** and **P007 (Cold Press Juicer)** are critically low **across multiple locations**.
+- 📦 **P020 (Microwave 25L) is overstocked** (**2,226 units vs. 1,651 safety stock**).
 
-🔹 **🔄 Recommendations:**
-- 🔀 Cross-train HR staff to support revenue-generating projects (e.g., hiring for Sales/Engineering).
-- 🔧 Reallocate surplus Engineering capital to underfunded IT infrastructure projects.
+🔹 **Recommendations:**
+- 🔄 **Transfer inventory** of overstocked items (e.g., microwaves) to locations with shortages.
+- 🌍 **Use geographic sales data** to align stock levels with **regional demand**.
 
 ## 📊 Dashboard Features
 
-✅ **Interactive Filters:** Drill down by department/project status.  
-✅ **Budget vs. Actuals:** 📊 Color-coded alerts for overspending.  
-✅ **Employee-Level Data:** 🏢 Track roles, salaries, and departments (e.g., *Emily Brown, HR Manager, $140K*).  
+✅ **Interactive Filters:** Drill down by brand, product group, or location.  
+✅ **Aging Analysis:** Color-coded by time buckets (e.g., **red for >12 months**).  
+✅ **Real-Time Alerts:** Highlight safety stock violations.  
 
 ## 🎯 Strategic Recommendations
 
-### 🏦 Mitigate HR’s Budget Deficit:
-- 🛑 Freeze non-essential hires or shift tasks to lower-cost roles.
+### 🔥 Liquidation Plan:
+- 💰 **Discount aged inventory** (>9 months) by **20–30%**.
 
-### 🏗 Optimize Engineering’s R&D Spend:
-- 🔄 Allocate **$200K of its $770K capital** to IT infrastructure upgrades.
+### 🤝 Vendor Collaboration:
+- 📦 Work with **Basalt Logistics** to **reduce holding costs**.
 
-### 🚀 Enhance Project Governance:
-- 🔍 Add a **“Risk Score” metric** to the dashboard for upcoming projects.
+### 📈 Demand Forecasting:
+- 📊 Integrate **historical sales data** to optimize **purchasing**.
 
 ## 🏁 Conclusion
 
-This dashboard highlights **actionable cost-saving opportunities** while ensuring **strategic projects stay on track**.
+This dashboard reveals **critical gaps in inventory management**, from **aging stock** to **replenishment risks**. **Immediate actions** can reduce **carrying costs** and **improve product availability**.
 
-### 📌 Next Steps:
-- 📊 **Integrate revenue data** to measure project ROI.
-- 🔔 **Automate alerts** for budget thresholds.
+### 🚀 Next Steps:
+- 🔗 **Link inventory data** to sales to identify **dead stock faster**.
+- ⏳ **Add lead time metrics** to safety stock calculations.
