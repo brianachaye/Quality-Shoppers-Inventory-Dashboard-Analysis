@@ -1,4 +1,3 @@
-
 # 📊 Quality Shoppers Inventory Analysis Dashboard
 
 ![Quality Shoppers Inventory Dashboard 1](quality_shoppers_dashboard_1.png)
